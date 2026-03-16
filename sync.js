@@ -1,37 +1,27 @@
-// 祖源语法练习 - 跨平台同步系统
-// 使用 Firebase Realtime Database
+// 祖源语法练习 - GitHub Gist 跨平台同步系统
+// 简化版：使用GitHub Gist存储进度
 
-// Firebase 配置
-const firebaseConfig = {
-    apiKey: "AIzaSyDemoKeyForTesting123",
-    authDomain: "zuyuan-grammar.firebaseapp.com",
-    databaseURL: "https://zuyuan-grammar-default-rtdb.firebaseio.com",
-    projectId: "zuyuan-grammar",
-    storageBucket: "zuyuan-grammar.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "1:123456789:web:abc123def456"
-};
-
-// 当前用户信息
-let currentUser = null;
+let currentGistId = null;
 let syncEnabled = false;
 
 // 初始化同步系统
 function initSyncSystem() {
-    const savedUsername = localStorage.getItem('grammar_username');
+    const savedGistId = localStorage.getItem('grammar_gist_id');
     const savedSyncEnabled = localStorage.getItem('grammar_sync_enabled') === 'true';
     
-    if (savedUsername && savedSyncEnabled) {
-        currentUser = savedUsername;
+    if (savedGistId && savedSyncEnabled) {
+        currentGistId = savedGistId;
         syncEnabled = true;
         updateSyncUI();
         // 自动同步
-        syncFromCloud();
+        syncFromGist();
+    } else {
+        updateSyncUI();
     }
 }
 
-// 创建新账号
-function createAccount() {
+// 创建新账号（创建新Gist）
+async function createAccount() {
     const username = prompt('请输入用户名（建议使用：zuyuan）:');
     
     if (!username || username.trim() === '') {
@@ -41,49 +31,34 @@ function createAccount() {
     
     const trimmedUsername = username.trim().toLowerCase();
     
-    // 检查用户名是否已存在
-    const userData = localStorage.getItem('grammar_user_' + trimmedUsername);
-    if (userData) {
-        const confirm = window.confirm('用户名已存在，是否使用此用户名登录？');
-        if (!confirm) return;
-    }
+    // 保存用户名
+    localStorage.setItem('grammar_username', trimmedUsername);
     
-    currentUser = trimmedUsername;
-    syncEnabled = true;
+    // 提示用户创建Gist
+    alert(`即将创建GitHub Gist来存储您的进度。\n\n请按以下步骤操作：\n\n1. 点击"确定"后会打开GitHub Gist页面\n2. 在Gist中输入以下内容：\n\n{\n  "username": "${trimmedUsername}",\n  "progress": {},\n  "lastUpdate": "${new Date().toISOString()}"\n}\n\n3. 点击"Create secret gist"\n4. 复制Gist URL中的ID（类似：abc123def456）\n5. 回到此页面，点击"登录"输入Gist ID`);
     
-    // 保存到本地
-    localStorage.setItem('grammar_username', currentUser);
-    localStorage.setItem('grammar_sync_enabled', 'true');
-    
-    // 创建云端数据
-    const data = getStorageData();
-    data.username = currentUser;
-    data.lastUpdate = new Date().toISOString();
-    saveToCloud(data);
-    
-    alert('账号创建成功！\n\n用户名：' + currentUser + '\n\n请记住此用户名，在其他设备登录时使用。');
-    
-    updateSyncUI();
+    // 打开GitHub Gist创建页面
+    window.open('https://gist.github.com/', '_blank');
 }
 
-// 登录
-function login() {
-    const username = prompt('请输入用户名:');
+// 登录（输入Gist ID）
+async function login() {
+    const gistId = prompt('请输入GitHub Gist ID:\n\n（类似：abc123def456）');
     
-    if (!username || username.trim() === '') {
-        alert('用户名不能为空');
+    if (!gistId || gistId.trim() === '') {
+        alert('Gist ID不能为空');
         return;
     }
     
-    currentUser = username.trim().toLowerCase();
+    currentGistId = gistId.trim();
     syncEnabled = true;
     
     // 保存到本地
-    localStorage.setItem('grammar_username', currentUser);
+    localStorage.setItem('grammar_gist_id', currentGistId);
     localStorage.setItem('grammar_sync_enabled', 'true');
     
-    // 从云端同步
-    syncFromCloud();
+    // 从Gist同步
+    await syncFromGist();
     
     updateSyncUI();
 }
@@ -93,62 +68,75 @@ function logout() {
     const confirm = window.confirm('确定要登出吗？本地数据将保留，但不会同步到云端。');
     if (!confirm) return;
     
-    currentUser = null;
+    currentGistId = null;
     syncEnabled = false;
     
-    localStorage.removeItem('grammar_username');
+    localStorage.removeItem('grammar_gist_id');
     localStorage.removeItem('grammar_sync_enabled');
     
     updateSyncUI();
 }
 
-// 保存到云端（模拟 - 实际需要 Firebase）
-function saveToCloud(data) {
-    if (!syncEnabled || !currentUser) return;
+// 从Gist同步（模拟 - 实际需要GitHub API或手动导出/导入）
+async function syncFromGist() {
+    if (!syncEnabled || !currentGistId) return;
     
-    // 这里使用 localStorage 模拟云端存储
-    // 实际部署时需要替换为 Firebase API
-    const cloudKey = 'grammar_cloud_' + currentUser;
-    localStorage.setItem(cloudKey, JSON.stringify({
-        ...data,
-        username: currentUser,
-        lastUpdate: new Date().toISOString()
-    }));
+    // 由于浏览器CORS限制，无法直接访问GitHub API
+    // 这里提供手动同步方案
     
-    console.log('✅ 数据已同步到云端');
+    const choice = window.confirm(`检测到您已登录Gist ID: ${currentGistId}\n\n是否从云端同步数据？\n\n点击"确定"：手动粘贴云端数据\n点击"取消"：使用本地数据`);
+    
+    if (choice) {
+        const cloudData = prompt('请打开您的GitHub Gist，复制JSON数据并粘贴到此处：');
+        
+        if (cloudData) {
+            try {
+                const data = JSON.parse(cloudData);
+                localStorage.setItem('grammarData', JSON.stringify(data));
+                alert('✅ 数据同步成功！');
+                
+                // 刷新界面
+                if (typeof updateStats === 'function') {
+                    updateStats();
+                }
+            } catch (e) {
+                alert('❌ 数据格式错误，请检查JSON格式');
+            }
+        }
+    }
 }
 
-// 从云端同步（模拟 - 实际需要 Firebase）
-function syncFromCloud() {
-    if (!syncEnabled || !currentUser) return;
+// 保存到Gist（导出数据供用户复制）
+function saveToGist() {
+    if (!syncEnabled || !currentGistId) return;
     
-    // 这里使用 localStorage 模拟云端存储
-    // 实际部署时需要替换为 Firebase API
-    const cloudKey = 'grammar_cloud_' + currentUser;
-    const cloudData = localStorage.getItem(cloudKey);
+    const data = getStorageData();
+    data.lastUpdate = new Date().toISOString();
     
-    if (cloudData) {
-        const data = JSON.parse(cloudData);
-        const localData = getStorageData();
-        
-        // 比较时间戳，使用最新的数据
-        const localUpdate = localData.lastUpdate || '1970-01-01T00:00:00Z';
-        const cloudUpdate = data.lastUpdate || '1970-01-01T00:00:00Z';
-        
-        if (new Date(cloudUpdate) > new Date(localUpdate)) {
-            // 云端数据更新，同步到本地
-            localStorage.setItem('grammarData', JSON.stringify(data));
-            console.log('✅ 数据已从云端同步');
-            
-            // 刷新界面
-            if (typeof updateStats === 'function') {
-                updateStats();
-            }
-        } else {
-            console.log('ℹ️ 本地数据已是最新');
-        }
-    } else {
-        console.log('ℹ️ 云端暂无数据，将使用本地数据');
+    const jsonData = JSON.stringify(data, null, 2);
+    
+    const choice = window.confirm(`数据已准备好同步！\n\n点击"确定"：复制数据到剪贴板\n点击"取消"：取消操作`);
+    
+    if (choice) {
+        // 复制到剪贴板
+        navigator.clipboard.writeText(jsonData).then(() => {
+            alert(`✅ 数据已复制到剪贴板！\n\n请按以下步骤更新Gist：\n\n1. 打开您的GitHub Gist\n2. 粘贴数据并保存\n3. 同步完成！\n\nGist地址：https://gist.github.com/${currentGistId}`);
+        }).catch(() => {
+            // 降级方案：显示数据供手动复制
+            prompt('请复制以下数据并保存到您的GitHub Gist：', jsonData);
+        });
+    }
+}
+
+// 自动同步（每完成一题后调用）
+function autoSync() {
+    if (!syncEnabled || !currentGistId) return;
+    
+    // 提示用户手动同步
+    const choice = window.confirm('题目已完成！是否同步到云端？\n\n点击"确定"：同步数据\n点击"取消"：稍后同步');
+    
+    if (choice) {
+        saveToGist();
     }
 }
 
@@ -159,16 +147,19 @@ function updateSyncUI() {
     const loginBtn = document.getElementById('loginBtn');
     const logoutBtn = document.getElementById('logoutBtn');
     const createAccountBtn = document.getElementById('createAccountBtn');
+    const syncNowBtn = document.getElementById('syncNowBtn');
     
-    if (syncEnabled && currentUser) {
+    if (syncEnabled && currentGistId) {
+        const username = localStorage.getItem('grammar_username') || 'user';
         syncStatus.textContent = '已登录';
         syncStatus.style.color = '#28a745';
-        syncUsername.textContent = currentUser;
+        syncUsername.textContent = `(${username})`;
         syncUsername.style.display = 'inline';
         
         loginBtn.style.display = 'none';
         createAccountBtn.style.display = 'none';
         logoutBtn.style.display = 'inline-block';
+        if (syncNowBtn) syncNowBtn.style.display = 'inline-block';
     } else {
         syncStatus.textContent = '未登录';
         syncStatus.style.color = '#6c757d';
@@ -177,16 +168,24 @@ function updateSyncUI() {
         loginBtn.style.display = 'inline-block';
         createAccountBtn.style.display = 'inline-block';
         logoutBtn.style.display = 'none';
+        if (syncNowBtn) syncNowBtn.style.display = 'none';
     }
 }
 
-// 自动同步（每完成一题后调用）
-function autoSync() {
-    if (!syncEnabled || !currentUser) return;
+// 立即同步
+function syncNow() {
+    if (!syncEnabled || !currentGistId) {
+        alert('请先登录');
+        return;
+    }
     
-    const data = getStorageData();
-    data.lastUpdate = new Date().toISOString();
-    saveToCloud(data);
+    const choice = window.confirm('请选择操作：\n\n点击"确定"：上传数据到云端\n点击"取消"：从云端下载数据');
+    
+    if (choice) {
+        saveToGist();
+    } else {
+        syncFromGist();
+    }
 }
 
 // 页面加载时初始化
@@ -197,4 +196,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
 });
 
-console.log('✅ 祖源语法练习同步系统已加载');
+console.log('✅ 祖源语法练习GitHub Gist同步系统已加载');
