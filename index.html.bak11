@@ -457,17 +457,6 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-number" id="mistakeCount">0</div>
-            <!-- 跨平台同步面板 -->
-            <div class="sync-panel" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 20px; margin-bottom: 30px;">
-                <h3 style="margin-bottom: 15px; color: #1976d2;">🔄 跨平台同步</h3>
-                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                    <button class="btn btn-primary btn-small" onclick="exportData()">📤 导出数据</button>
-                    <button class="btn btn-success btn-small" onclick="importData()">📥 导入数据</button>
-                </div>
-                <p style="margin-top: 10px; font-size: 12px; color: #666;">
-                    💡 提示：点击"导出数据"复制进度，粘贴到 <a href="https://gist.github.com/aaexhub/e3270ff596ed3af3972d7d751c32e7a9" target="_blank" style="color: #1976d2;">GitHub Gist</a>，在其他设备上"导入数据"即可同步
-                </p>
-            </div>
                     <div class="stat-label">错题数</div>
                 </div>
             </div>
@@ -619,41 +608,6 @@
         
         // 保存存储数据
         function saveStorageData(data) {
-        
-        // 导出数据（用于跨平台同步）
-        function exportData() {
-            const data = getStorageData();
-            const jsonStr = JSON.stringify(data, null, 2);
-            
-            // 复制到剪贴板
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(jsonStr).then(() => {
-                    alert('✅ 数据已复制到剪贴板！\n\n请按以下步骤同步：\n\n1. 打开 https://gist.github.com/aaexhub/e3270ff596ed3af3972d7d751c32e7a9\n2. 点击"Edit"\n3. 粘贴数据（Ctrl+V）\n4. 点击"Update secret gist"\n\n同步完成！👍');
-                }).catch(() => {
-                    prompt('请复制以下数据：', jsonStr);
-                });
-            } else {
-                prompt('请复制以下数据：', jsonStr);
-            }
-        }
-        
-        // 导入数据（用于跨平台同步）
-        function importData() {
-            const dataStr = prompt('请粘贴从GitHub Gist复制的数据：');
-            
-            if (!dataStr || dataStr.trim() === '') {
-                return;
-            }
-            
-            try {
-                const data = JSON.parse(dataStr);
-                saveStorageData(data);
-                alert('✅ 数据导入成功！\n\n页面将刷新...');
-                location.reload();
-            } catch (e) {
-                alert('❌ 数据格式错误，请检查JSON格式\n\n错误信息: ' + e.message);
-            }
-        }
             localStorage.setItem('grammarData', JSON.stringify(data));
         }
         

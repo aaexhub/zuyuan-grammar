@@ -619,41 +619,6 @@
         
         // 保存存储数据
         function saveStorageData(data) {
-        
-        // 导出数据（用于跨平台同步）
-        function exportData() {
-            const data = getStorageData();
-            const jsonStr = JSON.stringify(data, null, 2);
-            
-            // 复制到剪贴板
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(jsonStr).then(() => {
-                    alert('✅ 数据已复制到剪贴板！\n\n请按以下步骤同步：\n\n1. 打开 https://gist.github.com/aaexhub/e3270ff596ed3af3972d7d751c32e7a9\n2. 点击"Edit"\n3. 粘贴数据（Ctrl+V）\n4. 点击"Update secret gist"\n\n同步完成！👍');
-                }).catch(() => {
-                    prompt('请复制以下数据：', jsonStr);
-                });
-            } else {
-                prompt('请复制以下数据：', jsonStr);
-            }
-        }
-        
-        // 导入数据（用于跨平台同步）
-        function importData() {
-            const dataStr = prompt('请粘贴从GitHub Gist复制的数据：');
-            
-            if (!dataStr || dataStr.trim() === '') {
-                return;
-            }
-            
-            try {
-                const data = JSON.parse(dataStr);
-                saveStorageData(data);
-                alert('✅ 数据导入成功！\n\n页面将刷新...');
-                location.reload();
-            } catch (e) {
-                alert('❌ 数据格式错误，请检查JSON格式\n\n错误信息: ' + e.message);
-            }
-        }
             localStorage.setItem('grammarData', JSON.stringify(data));
         }
         
