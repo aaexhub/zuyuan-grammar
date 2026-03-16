@@ -99,33 +99,34 @@
         .question-number {
             color: #667eea;
             font-size: 14px;
+            font-weight: bold;
             margin-bottom: 10px;
         }
         
         .question-text {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.6;
-            color: #212529;
             margin-bottom: 20px;
+            white-space: pre-wrap;
         }
         
         .options {
-            display: grid;
-            gap: 12px;
+            margin-bottom: 20px;
         }
         
         .option {
             background: white;
-            border: 2px solid #dee2e6;
-            padding: 15px;
+            border: 2px solid #e0e0e0;
             border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
         
         .option:hover {
             border-color: #667eea;
-            background: #f8f9ff;
+            background: #f0f0ff;
         }
         
         .option.selected {
@@ -142,7 +143,7 @@
         
         .option.wrong {
             border-color: #dc3545;
-            background: #dc3545;
+            background: #dc3553;
             color: white;
         }
         
@@ -150,83 +151,37 @@
             background: #fff3cd;
             border-left: 4px solid #ffc107;
             padding: 15px;
-            margin-top: 15px;
+            margin-top: 20px;
             border-radius: 8px;
             display: none;
         }
         
         .explanation-title {
             font-weight: bold;
+            margin-bottom: 8px;
             color: #856404;
-            margin-bottom: 5px;
         }
         
         .explanation-text {
             color: #856404;
-            font-size: 14px;
-            white-space: pre-line;
+            line-height: 1.6;
         }
         
         .buttons {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             margin-top: 20px;
         }
         
         .btn {
-            flex: 1;
-            padding: 15px;
+            padding: 12px 24px;
             border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: bold;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
             transition: all 0.3s ease;
-        }
-        
-        .btn-primary {
-            background: #667eea;
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: #5568d3;
-        }
-        
-        .btn-success {
-            background: #28a745;
-            color: white;
-        }
-        
-        .btn-success:hover {
-            background: #218838;
-        }
-        
-        .btn-warning {
-            background: #ffc107;
-            color: #856404;
-        }
-        
-        .btn-warning:hover {
-            background: #e0a800;
-        }
-        
-        .btn-danger {
-            background: #dc3545;
-            color: white;
-        }
-        
-        .btn-danger:hover {
-            background: #c82333;
-        }
-        
-        .btn-secondary {
-            background: #6c757d;
-            color: white;
-        }
-        
-        .btn-secondary:hover {
-            background: #5a6268;
+            flex: 1;
         }
         
         .btn:disabled {
@@ -234,59 +189,142 @@
             cursor: not-allowed;
         }
         
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover:not(:disabled) {
+            background: #5a67d8;
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-success:hover:not(:disabled) {
+            background: #218838;
+        }
+        
+        .btn-warning {
+            background: #ffc107;
+            color: #000;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .btn-danger:hover:not(:disabled) {
+            background: #c82333;
+        }
+        
+        .start-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        .start-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .start-text {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
         .result-card {
             display: none;
-            text-align: center;
+            background: linear-gradient(135deg, #00c853 0%, #00bfa5 100%);
+            border-radius: 12px;
             padding: 40px;
+            text-align: center;
+            color: white;
         }
         
         .result-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
+            font-size: 64px;
+            margin-bottom: 15px;
         }
         
         .result-text {
             font-size: 24px;
-            margin-bottom: 10px;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
         
         .result-detail {
-            color: #6c757d;
-            margin-bottom: 30px;
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 20px;
         }
+        
+        .tab-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+                flex: 1;
+                padding: 15px;
+                background: #e9ecef;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 500;
+                color: #495057;
+                transition: all 0.3s ease;
+            }
+            
+            .tab.active {
+                background: #667eea;
+                color: white;
+            }
         
         .mistakes-section {
             margin-top: 30px;
         }
         
         .mistakes-section h3 {
+            color: #495057;
             margin-bottom: 15px;
-            color: #212529;
         }
         
         .mistakes-actions {
             display: flex;
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
         }
         
         .mistake-item {
-            background: #f8d7da;
-            border-left: 4px solid #dc3545;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
             padding: 15px;
             margin-bottom: 10px;
-            border-radius: 8px;
             display: flex;
             align-items: flex-start;
-            gap: 15px;
+            gap: 10px;
         }
         
         .mistake-checkbox {
             margin-top: 3px;
-            width: 20px;
-            height: 20px;
             cursor: pointer;
-            flex-shrink: 0;
         }
         
         .mistake-content {
@@ -294,142 +332,39 @@
         }
         
         .mistake-question {
-            font-weight: bold;
-            color: #721c24;
+            color: #495057;
             margin-bottom: 5px;
         }
         
         .mistake-answer {
-            font-size: 14px;
-            color: #721c24;
-            margin-bottom: 10px;
-        }
-        
-        .mistake-actions-inline {
-            display: flex;
-            gap: 10px;
+            font-size: 12px;
+            color: #6c757d;
         }
         
         .btn-small {
             padding: 8px 16px;
-            font-size: 14px;
-            flex: 0;
+            font-size: 13px;
         }
         
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
-            margin-left: 10px;
-        }
-        
-        .badge-easy {
-            background: #d4edda;
-            color: #155724;
-        }
-        
-        .badge-medium {
-            background: #fff3cd;
-            color: #856404;
-        }
-        
-        .badge-hard {
-            background: #f8d7da;
-            color: #721c24;
-        }
-        
-        .mode-tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .mode-tab {
-            flex: 1;
-            padding: 12px;
-            background: #f8f9fa;
-            border: 2px solid #dee2e6;
-            border-radius: 10px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .mode-tab.active {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-        
-        .start-card {
-            text-align: center;
-            padding: 40px;
-        }
-        
-        .start-icon {
-            font-size: 60px;
-            margin-bottom: 20px;
-        }
-        
-        .start-text {
-            font-size: 18px;
-            color: #6c757d;
-            margin-bottom: 30px;
-        }
-        
-        /* 打印样式 */
-        @media print {
-            body {
-                background: white;
-                padding: 0;
+        @media (max-width: 600px) {
+            .stats {
+                grid-template-columns: 1fr;
             }
             
             .container {
-                box-shadow: none;
-                max-width: 100%;
+                border-radius: 0;
             }
             
-            .header,
-            .stats,
-            .mode-tabs,
-            .start-card,
-            .question-card,
-            .result-card,
-            .mistakes-actions,
-            .btn,
-            .mistake-checkbox,
-            .mistake-actions-inline {
-                display: none !important;
+            .content {
+                padding: 20px;
             }
             
-            .mistakes-section {
-                margin-top: 0;
+            .buttons {
+                flex-direction: column;
             }
             
-            .mistake-item {
-                page-break-inside: avoid;
-                background: white;
-                border-left: 3px solid #000;
-                padding: 10px;
-                margin-bottom: 15px;
-            }
-            
-            .mistake-question {
-                color: black;
-                font-size: 14px;
-            }
-            
-            .mistake-answer {
-                color: #333;
-                font-size: 12px;
-            }
-        }
-        
-        @media screen {
-            .print-only {
-                display: none;
+            .mistakes-actions {
+                flex-direction: column;
             }
         }
     </style>
@@ -445,57 +380,46 @@
         </div>
         
         <div class="content">
-                    <div class="stat-number" id="totalCount">0</div>
-        <!-- 跨平台同步面板 -->
-        <div class="sync-panel" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 20px; margin-bottom: 30px;">
-            <h3 style="margin-bottom: 15px; color: #1976d2;">🔄 跨平台同步（GitHub Gist）</h3>
-            <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                <span>
-                    状态: <span id="syncStatus" style="font-weight: bold;">检查中...</span>
-                    <span id="syncUsername" style="font-weight: bold; color: #1976d2; display: none;"></span>
-                </span>
-                <div style="flex: 1;"></div>
-                <button id="createAccountBtn" class="btn btn-primary btn-small" onclick="createAccount()" style="display: inline-block;">
-                    创建账号
-                </button>
-                <button id="loginBtn" class="btn btn-secondary btn-small" onclick="login()" style="display: inline-block;">
-                    登录
-                </button>
-                <button id="syncNowBtn" class="btn btn-primary btn-small" onclick="syncNow()" style="display: none;">
-                    立即同步
-                </button>
-                <button id="logoutBtn" class="btn btn-danger btn-small" onclick="logout()" style="display: none;">
-                    登出
-                </button>
-            </div>
-            <p style="margin-top: 10px; font-size: 12px; color: #666;">
-                💡 提示：使用GitHub Gist存储进度，在任何设备上输入相同的Gist ID即可同步
-            </p>
-        </div>
-                    <div class="stat-label">总完成</div>
+            <!-- 简化的跨平台同步面板 -->
+            <div class="sync-panel" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 20px; margin-bottom: 30px;">
+                <h3 style="margin-bottom: 15px; color: #1976d2;">🔄 跨平台同步 (GitHub Gist)</h3>
+                <div style="margin-bottom: 15px;">
+                    <button class="btn btn-primary btn-small" onclick="exportData()">📤 导出数据</button>
+                    <button class="btn btn-success btn-small" onclick="importData()">📥 导入数据</button>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="mistakeCount">0</div>
-                    <div class="stat-label">错题数</div>
-                </div>
+                <p style="font-size: 12px; color: #666; margin-top: 10px;">
+                    💡 提示： 导出数据后，复制到 <a href="https://gist.github.com/aaexhub/e3270ff596ed3af3972d7d751c32e7a9" target="_blank" style="color: #1976d2;">您的Gist</a>， 在其他设备上导入即可同步
+                </p>
             </div>
             
-            <!-- 模式选择 -->
-            <div class="mode-tabs">
-                <div class="mode-tab active" onclick="switchMode('daily')">📝 每日练习</div>
-                <div class="mode-tab" onclick="switchMode('mistakes')">❌ 错题本</div>
+            <div class="tab-container">
+                <button class="tab active" onclick="switchMode('daily')">📝 每日练习</button>
+                <button class="tab" onclick="switchMode('mistakes')">❌ 错题本</button>
             </div>
             
             <!-- 每日练习 -->
             <div id="dailyMode">
-                <!-- 开始卡片 -->
-                <div class="start-card" id="startCard">
-                    <div class="start-icon">📚</div>
-                    <div class="start-text">准备好了吗？每天5题，稳步提升语法水平！</div>
-                    <button class="btn btn-primary" onclick="startDaily()">开始学习</button>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalCompleted">0</div>
+                        <div class="stat-label">已完成题目</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="accuracyRate">0%</div>
+                        <div class="stat-label">正确率</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalCount">0</div>
+                        <div class="stat-label">总题目数</div>
+                    </div>
                 </div>
                 
-                <!-- 题目卡片 -->
+                <div class="start-card" id="startCard">
+                    <div class="start-icon">📖</div>
+                    <div class="start-text" id="startText">开始今日练习</div>
+                    <button class="btn btn-primary" onclick="startDaily()">开始练习</button>
+                </div>
+                
                 <div class="question-card" id="questionCard">
                     <div class="question-number" id="questionNumber"></div>
                     <div class="question-text" id="questionText"></div>
@@ -510,7 +434,6 @@
                     </div>
                 </div>
                 
-                <!-- 结果卡片 -->
                 <div class="result-card" id="resultCard">
                     <div class="result-icon">🎉</div>
                     <div class="result-text">今日任务完成！</div>
@@ -546,660 +469,51 @@
             </div>
         </div>
     </div>
-
+    
+    <script src="questions.json"></script>
     <script>
-        let questions = [];
-        let currentQuestion = null;
-        let currentIndex = 0;
-        let todayQuestions = [];
-        let selectedOption = null;
-        let currentMode = 'daily';
+        // 简化的跨平台同步函数
+        function exportData() {
+            const data = getStorageData();
+            const jsonStr = JSON.stringify(data, null, 2);
+            
+            // 复制到剪贴板
+            navigator.clipboard.writeText(jsonStr).then(() => {
+                alert('✅ 数据已复制到剪贴板！\n\n请按以下步骤同步：\n\n1. 打开 https://gist.github.com/aaexhub/e3270ff596ed3af3972d7d751c32e7a9\n2. 点击"Edit"\n3. 粘贴数据\n4. 点击"Update secret gist"\n\n同步完成！👍');
+            }).catch(() => {
+                // 降级方案：显示文本框
+                const textArea = document.createElement('textarea');
+                textArea.value = jsonStr;
+                textArea.style.width = '100%';
+                textArea.style.height = '300px';
+                textArea.style.marginTop = '10px';
+                
+                const container = document.createElement('div');
+                container.innerHTML = '<p>请复制以下数据，保存到您的Gist:</p>';
+                container.appendChild(textArea);
+                
+                const win = window.open('', '_blank');
+                win.document.body.appendChild(container);
+            });
+        }
         
-        // 错题练习相关
-        let mistakeQuestions = [];
-        let mistakeIndex = 0;
-        let currentMistakeQuestion = null;
-        let selectedMistakeOption = null;
-        
-        // 加载题目数据
-        async function loadQuestions() {
+        function importData() {
+            const dataStr = prompt('请粘贴从Gist复制的数据:');
+            
+            if (!dataStr || dataStr.trim() === '') {
+                alert('❌ 未输入数据');
+                return;
+            }
+            
             try {
-                const response = await fetch('questions.json');
-                questions = await response.json();
-                console.log(`加载了 ${questions.length} 道题目`);
-                initApp();
-            } catch (error) {
-                console.error('加载题目失败:', error);
-                alert('题目加载失败，请刷新页面重试');
+                const data = JSON.parse(dataStr);
+                localStorage.setItem('grammarData', JSON.stringify(data));
+                alert('✅ 数据导入成功！\n\n页面将刷新...');
+                location.reload();
+            } catch (e) {
+                alert('❌ 数据格式错误，请检查JSON格式\n\n错误信息: ' + e.message);
             }
         }
-        
-        // 初始化应用
-        function initApp() {
-            updateStats();
-            
-            const data = getStorageData();
-            if (data.todayCompleted >= 5) {
-                showResult();
-            }
-        }
-        
-        // 更新统计
-        function updateStats() {
-            const data = getStorageData();
-            document.getElementById('todayCount').textContent = data.todayCompleted;
-            document.getElementById('totalCount').textContent = data.totalCompleted;
-            document.getElementById('mistakeCount').textContent = data.mistakes.length;
-            
-            const progress = (data.todayCompleted / 5) * 100;
-            document.getElementById('progressFill').style.width = `${Math.min(progress, 100)}%`;
-        }
-        
-        // 获取存储数据
-        function getStorageData() {
-            const defaultData = {
-                todayCompleted: 0,
-                totalCompleted: 0,
-                lastDate: '',
-                completedQuestions: [],
-                recentQuestions: [],
-                mistakes: []
-            };
-            
-            const stored = localStorage.getItem('grammarData');
-            if (!stored) return defaultData;
-            
-            const data = JSON.parse(stored);
-            const today = new Date().toDateString();
-            
-            if (data.lastDate !== today) {
-                data.todayCompleted = 0;
-                data.lastDate = today;
-                data.recentQuestions = data.recentQuestions.filter(item => {
-                    const daysDiff = (Date.now() - item.date) / (1000 * 60 * 60 * 24);
-                    return daysDiff < 10;
-                });
-                saveStorageData(data);
-            }
-            
-            return data;
-        }
-        
-        // 保存存储数据
-        function saveStorageData(data) {
-            localStorage.setItem('grammarData', JSON.stringify(data));
-        }
-            
-            // 自动同步到云端
-            if (typeof autoSync === "function") {
-                autoSync();
-            }
-        
-        // 开始每日练习
-        function startDaily() {
-            const data = getStorageData();
-            
-            if (data.todayCompleted >= 5) {
-                showResult();
-                return;
-            }
-            
-            todayQuestions = selectDailyQuestions(data);
-            currentIndex = 0;
-            
-            document.getElementById('startCard').style.display = 'none';
-            document.getElementById('resultCard').style.display = 'none';
-            showQuestion();
-        }
-        
-        // 选择每日题目
-        function selectDailyQuestions(data) {
-            const easyQuestions = questions.filter(q => q.difficulty === 'easy');
-            const mediumQuestions = questions.filter(q => q.difficulty === 'medium');
-            const hardQuestions = questions.filter(q => q.difficulty === 'hard');
-            
-            const recentIds = data.recentQuestions.map(item => item.id);
-            const completedIds = data.completedQuestions;
-            
-            const available = (q) => !recentIds.includes(q.id) && !completedIds.includes(q.id);
-            
-            const availableEasy = easyQuestions.filter(available);
-            const availableMedium = mediumQuestions.filter(available);
-            const availableHard = hardQuestions.filter(available);
-            
-            const selected = [];
-            
-            for (let i = 0; i < 2 && availableEasy.length > 0; i++) {
-                const rand = Math.floor(Math.random() * availableEasy.length);
-                selected.push(availableEasy.splice(rand, 1)[0]);
-            }
-            
-            for (let i = 0; i < 2 && availableMedium.length > 0; i++) {
-                const rand = Math.floor(Math.random() * availableMedium.length);
-                selected.push(availableMedium.splice(rand, 1)[0]);
-            }
-            
-            if (availableHard.length > 0) {
-                const rand = Math.floor(Math.random() * availableHard.length);
-                selected.push(availableHard.splice(rand, 1)[0]);
-            }
-            
-            while (selected.length < 5) {
-                const allAvailable = questions.filter(q => 
-                    !selected.includes(q) && available(q)
-                );
-                if (allAvailable.length === 0) break;
-                const rand = Math.floor(Math.random() * allAvailable.length);
-                selected.push(allAvailable[rand]);
-            }
-            
-            return selected;
-        }
-        
-        // 显示题目
-        function showQuestion() {
-            currentQuestion = todayQuestions[currentIndex];
-            selectedOption = null;
-            
-            const questionCard = document.getElementById('questionCard');
-            questionCard.style.display = 'block';
-            
-            const difficultyText = {
-                'easy': '简单',
-                'medium': '中等',
-                'hard': '困难'
-            };
-            
-            document.getElementById('questionNumber').innerHTML = 
-                `第 ${currentIndex + 1} 题 / 共 ${todayQuestions.length} 题 
-                <span class="badge badge-${currentQuestion.difficulty}">${difficultyText[currentQuestion.difficulty]}</span>`;
-            
-            document.getElementById('questionText').textContent = currentQuestion.question;
-            
-            const optionsContainer = document.getElementById('optionsContainer');
-            optionsContainer.innerHTML = '';
-            
-            const optionLabels = ['A', 'B', 'C', 'D'];
-            currentQuestion.options.forEach((option, index) => {
-                const div = document.createElement('div');
-                div.className = 'option';
-                div.textContent = `${optionLabels[index]}. ${option}`;
-                div.onclick = () => selectOption(index, div);
-                optionsContainer.appendChild(div);
-            });
-            
-            document.getElementById('explanation').style.display = 'none';
-            document.getElementById('checkBtn').style.display = 'block';
-            document.getElementById('checkBtn').disabled = true;
-            document.getElementById('nextBtn').style.display = 'none';
-        }
-        
-        // 选择选项
-        function selectOption(index, element) {
-            selectedOption = index;
-            
-            document.querySelectorAll('.option').forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            element.classList.add('selected');
-            document.getElementById('checkBtn').disabled = false;
-        }
-        
-        // 检查答案
-        function checkAnswer() {
-            const correctAnswer = currentQuestion.answer;
-            const optionLabels = ['A', 'B', 'C', 'D'];
-            const selectedAnswer = optionLabels[selectedOption];
-            
-            const options = document.querySelectorAll('.option');
-            const isCorrect = selectedAnswer === correctAnswer;
-            
-            options.forEach((opt, index) => {
-                if (optionLabels[index] === correctAnswer) {
-                    opt.classList.add('correct');
-                } else if (index === selectedOption && !isCorrect) {
-                    opt.classList.add('wrong');
-                }
-            });
-            
-            document.getElementById('explanationText').textContent = 
-                `正确答案: ${correctAnswer}\n\n${currentQuestion.explanation}`;
-            document.getElementById('explanation').style.display = 'block';
-            
-            const data = getStorageData();
-            data.todayCompleted++;
-            data.totalCompleted++;
-            data.completedQuestions.push(currentQuestion.id);
-            data.recentQuestions.push({
-                id: currentQuestion.id,
-                date: Date.now()
-            });
-            
-            if (!isCorrect) {
-                data.mistakes.push({
-                    id: currentQuestion.id,
-                    question: currentQuestion.question,
-                    correctAnswer: correctAnswer,
-                    userAnswer: selectedAnswer,
-                    date: Date.now()
-                });
-            }
-            
-            saveStorageData(data);
-            updateStats();
-            
-            document.getElementById('checkBtn').style.display = 'none';
-            document.getElementById('nextBtn').style.display = 'block';
-        }
-        
-        // 下一题
-        function nextQuestion() {
-            currentIndex++;
-            
-            if (currentIndex >= todayQuestions.length) {
-                showResult();
-            } else {
-                showQuestion();
-            }
-        }
-        
-        // 显示结果
-        function showResult() {
-            document.getElementById('startCard').style.display = 'none';
-            document.getElementById('questionCard').style.display = 'none';
-            const resultCard = document.getElementById('resultCard');
-            resultCard.style.display = 'block';
-            
-            const data = getStorageData();
-            document.getElementById('resultDetail').textContent = 
-                `今日已完成 ${data.todayCompleted} 题，总计完成 ${data.totalCompleted} 题`;
-        }
-        
-        // 切换模式
-        function switchMode(mode) {
-            currentMode = mode;
-            
-            document.querySelectorAll('.mode-tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            event.target.classList.add('active');
-            
-            document.getElementById('dailyMode').style.display = mode === 'daily' ? 'block' : 'none';
-            document.getElementById('mistakesMode').style.display = mode === 'mistakes' ? 'block' : 'none';
-            
-            if (mode === 'mistakes') {
-                initMistakesMode();
-            }
-        }
-        
-        // 初始化错题模式
-        function initMistakesMode() {
-            const data = getStorageData();
-            const hasMistakes = data.mistakes.length > 0;
-            
-            document.getElementById('mistakeStartText').textContent = 
-                hasMistakes ? `共有 ${data.mistakes.length} 道错题` : '暂无错题，继续加油！';
-            
-            document.getElementById('startMistakeBtn').style.display = hasMistakes ? 'block' : 'none';
-            document.getElementById('mistakeStartCard').style.display = 'block';
-            document.getElementById('mistakeQuestionCard').style.display = 'none';
-            document.getElementById('mistakesSection').style.display = 'none';
-            
-            if (hasMistakes) {
-                showMistakes();
-            }
-        }
-        
-        // 显示错题本
-        function showMistakes() {
-            const data = getStorageData();
-            const mistakesSection = document.getElementById('mistakesSection');
-            
-            if (data.mistakes.length === 0) {
-                mistakesSection.innerHTML = '<p style="text-align:center;color:#6c757d;padding:40px">暂无错题，继续加油！</p>';
-                return;
-            }
-            
-            let html = `
-                <h3>❌ 错题列表</h3>
-                <div class="mistakes-actions">
-                    <button class="btn btn-primary btn-small" onclick="practiceSelected()">练习选中错题</button>
-                    <button class="btn btn-danger btn-small" onclick="deleteSelected()">删除选中错题</button>
-                    <button class="btn btn-secondary btn-small" onclick="printMistakes()">打印错题</button>
-                </div>
-            `;
-            
-            data.mistakes.slice(-20).reverse().forEach((mistake, index) => {
-                const fullQuestion = questions.find(q => q.id === mistake.id);
-                let optionsHTML = '';
-                if (fullQuestion && fullQuestion.options) {
-                    optionsHTML = fullQuestion.options.map((opt, i) => 
-                        `<div style="margin: 3px 0; color: #555;">${optionLabels[i]}. ${opt}</div>`
-                    ).join('');
-                }
-                
-                html += `
-                    <div class="mistake-item">
-                        <input type="checkbox" class="mistake-checkbox" data-id="${mistake.id}">
-                        <div class="mistake-content">
-                            <div class="mistake-question">${data.mistakes.length - index}. ${mistake.question}</div>
-                            <div style="margin-top: 8px; padding-left: 10px;">${optionsHTML}</div>
-                            <div class="mistake-answer">
-                                你的答案: ${mistake.userAnswer} | 正确答案: ${mistake.correctAnswer}
-                            </div>
-
-                        </div>
-                    </div>
-                `;
-            });
-            
-            mistakesSection.innerHTML = html;
-            mistakesSection.style.display = 'block';
-        }
-        
-        // 获取选中的错题ID
-        function getSelectedMistakeIds() {
-            const checkboxes = document.querySelectorAll('.mistake-checkbox:checked');
-            return Array.from(checkboxes).map(cb => parseInt(cb.dataset.id));
-        }
-        
-        // 练习选中的错题
-        function practiceSelected() {
-            const selectedIds = getSelectedMistakeIds();
-            
-            if (selectedIds.length === 0) {
-                alert('请先勾选要练习的错题');
-                return;
-            }
-            
-            const data = getStorageData();
-            mistakeQuestions = selectedIds.map(id => {
-                return questions.find(q => q.id === id);
-            }).filter(q => q);
-            
-            if (mistakeQuestions.length === 0) {
-                alert('没有找到选中的题目');
-                return;
-            }
-            
-            mistakeIndex = 0;
-            document.getElementById('mistakeStartCard').style.display = 'none';
-            document.getElementById('mistakesSection').style.display = 'none';
-            showMistakeQuestion();
-        }
-        
-        // 删除选中的错题
-        function deleteSelected() {
-            const selectedIds = getSelectedMistakeIds();
-            
-            if (selectedIds.length === 0) {
-                alert('请先勾选要删除的错题');
-                return;
-            }
-            
-            if (!confirm(`确定要删除 ${selectedIds.length} 道错题吗？`)) {
-                return;
-            }
-            
-            const data = getStorageData();
-            data.mistakes = data.mistakes.filter(m => !selectedIds.includes(m.id));
-            saveStorageData(data);
-            updateStats();
-            
-            alert(`已删除 ${selectedIds.length} 道错题`);
-            initMistakesMode();
-        }
-        
-        // 打印错题
-        function printMistakes() {
-            const selectedIds = getSelectedMistakeIds();
-            const data = getStorageData();
-            
-            let mistakesToPrint = data.mistakes;
-            if (selectedIds.length > 0) {
-                mistakesToPrint = data.mistakes.filter(m => selectedIds.includes(m.id));
-            }
-            
-            if (mistakesToPrint.length === 0) {
-                alert('没有可打印的错题');
-                return;
-            }
-            
-            // 创建打印窗口
-            const printWindow = window.open('', '_blank');
-            if (!printWindow) {
-                alert('打印窗口被浏览器阻止，请允许弹窗后重试');
-                return;
-            }
-            
-            let printHTML = `
-                <!DOCTYPE html>
-                <html>
-                <head>
-                    <meta charset="UTF-8">
-                    <title>错题打印 - 祖源语法学习系统</title>
-                    <style>
-                        body {
-                            font-family: "Microsoft YaHei", Arial, sans-serif;
-                            padding: 20px;
-                            max-width: 800px;
-                            margin: 0 auto;
-                        }
-                        h1 {
-                            text-align: center;
-                            border-bottom: 2px solid #333;
-                            padding-bottom: 10px;
-                        }
-                        .mistake-item {
-                            margin-bottom: 30px;
-                            page-break-inside: avoid;
-                            border: 1px solid #ddd;
-                            padding: 15px;
-                            border-radius: 5px;
-                        }
-                        .mistake-number {
-                            font-weight: bold;
-                            font-size: 16px;
-                            margin-bottom: 10px;
-                        }
-                        .mistake-question {
-                            font-size: 15px;
-                            line-height: 1.8;
-                            margin-bottom: 10px;
-                        }
-                        .mistake-answer {
-                            font-size: 14px;
-                            color: #666;
-                            margin-top: 10px;
-                            padding-top: 10px;
-                            border-top: 1px dashed #ddd;
-                        }
-                        .print-date {
-                            text-align: center;
-                            color: #999;
-                            margin-top: 30px;
-                            font-size: 12px;
-                        }
-                        @media print {
-                            .mistake-item {
-                                page-break-inside: avoid;
-                            }
-                        }
-                    </style>
-                </head>
-                <body>
-                    <h1>📚 祖源语法错题集</h1>
-            `;
-            
-            mistakesToPrint.forEach((mistake, index) => {
-                // 从原始题目数据中获取完整信息
-                const fullQuestion = questions.find(q => q.id === mistake.id);
-                let optionsHTML = '';
-                
-                if (fullQuestion && fullQuestion.options) {
-                    optionsHTML = fullQuestion.options.map((opt, i) => 
-                        `<div style="margin: 5px 0;">${optionLabels[i]}. ${opt}</div>`
-                    ).join('');
-                }
-                
-                printHTML += `
-                    <div class="mistake-item">
-                        <div class="mistake-number">第 ${index + 1} 题</div>
-                        <div class="mistake-question">${mistake.question}</div>
-                        <div style="margin-top: 10px;">${optionsHTML}</div>
-                        <div style="margin-top: 10px; padding: 8px; background: #f0f0f0; border-radius: 3px;">
-                            <strong>正确答案：${mistake.correctAnswer}</strong>
-                        </div>
-                    </div>
-                `;
-            });
-            
-            printHTML += `
-                <div class="print-date">
-                    打印时间：${new Date().toLocaleString('zh-CN')}
-                </div>
-                </body>
-                </html>
-            `;
-            
-            printWindow.document.write(printHTML);
-            printWindow.document.close();
-            printWindow.print();
-        }
-        
-        // 开始错题练习
-        function startMistakePractice() {
-            const data = getStorageData();
-            
-            // 获取所有错题对应的完整题目
-            mistakeQuestions = data.mistakes.map(mistake => {
-                return questions.find(q => q.id === mistake.id);
-            }).filter(q => q); // 过滤掉undefined
-            
-            if (mistakeQuestions.length === 0) {
-                alert('没有错题可练习');
-                return;
-            }
-            
-            mistakeIndex = 0;
-            document.getElementById('mistakeStartCard').style.display = 'none';
-            document.getElementById('mistakesSection').style.display = 'none';
-            showMistakeQuestion();
-        }
-        
-        // 显示错题
-        function showMistakeQuestion() {
-            currentMistakeQuestion = mistakeQuestions[mistakeIndex];
-            selectedMistakeOption = null;
-            
-            const questionCard = document.getElementById('mistakeQuestionCard');
-            questionCard.style.display = 'block';
-            
-            document.getElementById('mistakeQuestionNumber').textContent = 
-                `错题 ${mistakeIndex + 1} / ${mistakeQuestions.length}`;
-            
-            document.getElementById('mistakeQuestionText').textContent = currentMistakeQuestion.question;
-            
-            const optionsContainer = document.getElementById('mistakeOptionsContainer');
-            optionsContainer.innerHTML = '';
-            
-            const optionLabels = ['A', 'B', 'C', 'D'];
-            currentMistakeQuestion.options.forEach((option, index) => {
-                const div = document.createElement('div');
-                div.className = 'option';
-                div.textContent = `${optionLabels[index]}. ${option}`;
-                div.onclick = () => selectMistakeOption(index, div);
-                optionsContainer.appendChild(div);
-            });
-            
-            document.getElementById('mistakeExplanation').style.display = 'none';
-            document.getElementById('mistakeCheckBtn').style.display = 'block';
-            document.getElementById('mistakeCheckBtn').disabled = true;
-            document.getElementById('mistakeNextBtn').style.display = 'none';
-            document.getElementById('backToMistakesBtn').style.display = 'none';
-        }
-        
-        // 选择错题选项
-        function selectMistakeOption(index, element) {
-            selectedMistakeOption = index;
-            
-            document.querySelectorAll('#mistakeOptionsContainer .option').forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            element.classList.add('selected');
-            document.getElementById('mistakeCheckBtn').disabled = false;
-        }
-        
-        // 检查错题答案
-        function checkMistakeAnswer() {
-            const correctAnswer = currentMistakeQuestion.answer;
-            const optionLabels = ['A', 'B', 'C', 'D'];
-            const selectedAnswer = optionLabels[selectedMistakeOption];
-            
-            const options = document.querySelectorAll('#mistakeOptionsContainer .option');
-            const isCorrect = selectedAnswer === correctAnswer;
-            
-            options.forEach((opt, index) => {
-                if (optionLabels[index] === correctAnswer) {
-                    opt.classList.add('correct');
-                } else if (index === selectedMistakeOption && !isCorrect) {
-                    opt.classList.add('wrong');
-                }
-            });
-            
-            document.getElementById('mistakeExplanationText').textContent = 
-                `正确答案: ${correctAnswer}\n\n${currentMistakeQuestion.explanation}`;
-            document.getElementById('mistakeExplanation').style.display = 'block';
-            
-            // 如果答对了，从错题本移除
-            if (isCorrect) {
-                const data = getStorageData();
-                data.mistakes = data.mistakes.filter(m => m.id !== currentMistakeQuestion.id);
-                saveStorageData(data);
-                updateStats();
-            }
-            
-            document.getElementById('mistakeCheckBtn').style.display = 'none';
-            document.getElementById('mistakeNextBtn').style.display = 'block';
-            document.getElementById('backToMistakesBtn').style.display = 'block';
-        }
-        
-        // 下一道错题
-        function nextMistakeQuestion() {
-            mistakeIndex++;
-            
-            if (mistakeIndex >= mistakeQuestions.length) {
-                alert('🎉 所有错题练习完成！');
-                backToMistakes();
-            } else {
-                showMistakeQuestion();
-            }
-        }
-        
-        // 返回错题本
-        function backToMistakes() {
-            initMistakesMode();
-        }
-        
-        // 重做单个错题
-        function retryMistake(questionId) {
-            const question = questions.find(q => q.id === questionId);
-            if (!question) {
-                alert('题目不存在');
-                return;
-            }
-            
-            mistakeQuestions = [question];
-            mistakeIndex = 0;
-            
-            document.getElementById('mistakeStartCard').style.display = 'none';
-            document.getElementById('mistakesSection').style.display = 'none';
-            showMistakeQuestion();
-        }
-        
-        window.onload = loadQuestions;
     </script>
 </body>
 </html>
