@@ -1,0 +1,1276 @@
+[
+  {
+    "id": 1,
+    "question": "1. ---We’ll do what we can ____English well this term.\n---It’s high time for you to work hard.",
+    "options": [
+      "study",
+      "to study",
+      "be studied",
+      "be studying"
+    ],
+    "answer": "B",
+    "explanation": "这题可能会误选A，因为大家知道情态动词后接动词原形，但是请大家分析下句子的成分，这里的what we can 实际省略了do，这个what we can do 在句子中作宾语从句。正确答案是B，用动词不定式作目的状语。后面回答的it's time for sb.to do sth.....对某人来说是时候去做...这是固定用法。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "2. ---I don’t think your team can beat theirs.\n---____. But we could if Lin Tao were on the team.",
+    "options": [
+      "No, we can’t",
+      "Yes, we can’t",
+      "Yes, we can",
+      "No, we can"
+    ],
+    "answer": "A",
+    "explanation": "在think，believe这类词接的宾语从句，否定要提前。而对于否定句的回答，与习惯相反，yes是“不”no 是“是的”B,D结构不正确，首先要排除。而我们看后面的BUT，表示转折，说明回答者的队没有打赢。那么就是we can't. 正确答案是A。翻译为“是的，我们没有赢”",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "3. ---Have you finished your work yet?\n---No, not yet. I think it’ll take _____ ten minutes.",
+    "options": [
+      "another",
+      "other",
+      "others",
+      "more"
+    ],
+    "answer": "A",
+    "explanation": "another +数词+名词 固定用法，another表示“另外的，再” 根据题目意思，可以判断是需要再花10分钟，所以答案是A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "question": "4. Roy made several kites, but _____ of them can fly high in the sky.",
+    "options": [
+      "neither",
+      "none",
+      "all",
+      "most"
+    ],
+    "answer": "B",
+    "explanation": "neither \"两者中任何一个都不\"   all \"三者或三者以上都\"  most\"大部分\" 根据题目意思，只有none表示“一个都没有”没有确定的数量，不知道是2个还是3个或3个以上。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "question": "5. ---Will you be back ____ five in the afternoon?\n---I’m not sure, maybe later than that.",
+    "options": [
+      "in",
+      "before",
+      "for",
+      "until"
+    ],
+    "answer": "B",
+    "explanation": "in 只能接一段时间，before \"在...之前\"  for 接一段时间，until“直到....\"答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "question": "6. ---I’m sorry to have kept you waiting long.\n---Never mind. I ____ here for only a few minutes.",
+    "options": [
+      "have been",
+      "have come",
+      "have arrived",
+      "waited"
+    ],
+    "answer": "A",
+    "explanation": "因为come,arrive是瞬间动词，在用于现在完成时时，不能与表示一段的for,since构成的时间状语连用。答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "question": "7. ---You seem to like sweets.\n---_______ .That’s probably why I’m becoming fatter and fatter.",
+    "options": [
+      "So I do",
+      "So do I",
+      "So am I",
+      "So I am"
+    ],
+    "answer": "A",
+    "explanation": "seem 是连系动词，不能用be动词来回答。So I do 是“的确如此”表示同意对方的观点 so do I “我也一样”答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "question": "8. With the help of the computer, information can ____every corner of the world swiftly.",
+    "options": [
+      "get",
+      "reach",
+      "arrive",
+      "return"
+    ],
+    "answer": "B",
+    "explanation": "get ,arrive,到达，是不及物动词，get to,arrive at,arrive in 是固定搭配。而reach是及物动词，可以直接接宾语，“到达” return是“返回”与题目意思不符合，答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "question": "9. The children ______ not to play with the fire.",
+    "options": [
+      "are often told",
+      "tell",
+      "are telling",
+      "told"
+    ],
+    "answer": "A",
+    "explanation": "孩子们今次没告诉不要玩火。考被动语态。答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "question": "10. ---May I go out with you tomorrow?\n---If your job ______by then.",
+    "options": [
+      "has been finished",
+      "finish",
+      "will be finished",
+      "will finish"
+    ],
+    "answer": "A",
+    "explanation": "job被完成，肯定用被动语态，并且是if引导的条件状语从句，不能用将来时。答案是A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "question": "11. ---Will you please show me how to operate the new machine?\n---Sure. It’s a piece of cake. Now let me tell you _____ to do first.",
+    "options": [
+      "what",
+      "how",
+      "whether",
+      "which"
+    ],
+    "answer": "A",
+    "explanation": "whether是否，which哪一个，与题意不符合，而如果用how,do 后面应该有宾语。how to do it.答案为A，what to do first 首先做什么。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "question": "12. ---My trousers are______ .\n---I’ll buy you a new pair.",
+    "options": [
+      "wore out",
+      "worn out",
+      "wearing out",
+      "sold out"
+    ],
+    "answer": "B",
+    "explanation": "wear out 穿坏，sell out卖完。裤子是被穿坏，而不是主动的，所以是被动语态，答案是B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "question": "13. ---What do you think of these two books?\n---_____ of them are interesting. And I’ve read them several times.",
+    "options": [
+      "Both",
+      "Neither",
+      "None",
+      "Either"
+    ],
+    "answer": "A",
+    "explanation": "根据题意，是两本书，both“两者都”neither\"两者都不\" none\"一个也没有\" either\"两者中任何一个\"答案是A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "question": "14. ---The artist has got _____ much work to do that he hardly has time to help his wife with the housework.\n---That’s true. Even on Sundays he is busy with his work.",
+    "options": [
+      "too",
+      "so",
+      "very",
+      "such"
+    ],
+    "answer": "B",
+    "explanation": "本题是考so ...that和such ....that的用法。such是修饰名词，但是如果名词前有many ,much ,little,few等修饰词，则用so 代替such.答案为B.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "question": "15. ---How long ____ you ____a fever?\n---Ever since last night.",
+    "options": [
+      "have, got",
+      "have, had",
+      "have, caught",
+      "did, have"
+    ],
+    "answer": "B",
+    "explanation": "根据后面的since我们可以判断要用完成时。而get,catch等瞬间动词在完成时中不能与for,since引导的时间状语连用，答案是B.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "question": "16. ---I think he lives _____ No.386 West St.\n---Are you sure _____ that? You’d better make sure.",
+    "options": [
+      "at, /",
+      "in, of",
+      "in, about",
+      "at, of"
+    ],
+    "answer": "D",
+    "explanation": "live in \"居住\"后接大地点。live at \"居住\"后面接具体的地点。be sure of /be sure about 确信，固定用法。表示对什么有把握。答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 17,
+    "question": "17. ---The rain came to a stop the night before. The fields are still full of water.\n---It _____ for nearly a week.",
+    "options": [
+      "has rained",
+      "had rained",
+      "would rain",
+      "was raining"
+    ],
+    "answer": "B",
+    "explanation": "came to a stop“停止”the night before\"前一个晚上\"for+一段时间用于完成时，而came 表明是过去时，所以后面用过去完成时。答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 18,
+    "question": "18. ---He seems _____ ill. Shall we take him to the hospital right now?\n---I don’t think it matters. Maybe he’s caught a bit of a cold.",
+    "options": [
+      "terrible",
+      "terribly",
+      "even",
+      "to be terrible"
+    ],
+    "answer": "B",
+    "explanation": "seem+形容词  “好像是”ill “病了”用副词修饰。答案为B.  even修饰形容词/副词比较级。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "question": "19. ---Would you like ___ some fruit?\n---No thanks. I don’t feel like _____ anything now.",
+    "options": [
+      "to have, to eat",
+      "having, to eat",
+      "having, eating",
+      "to have, eating"
+    ],
+    "answer": "D",
+    "explanation": "would you like to do sth.委婉询问对方的意愿“是否想要做什么....”可以排除B.C .而feel like +名词/动名词，表示“觉得好像....” 答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 20,
+    "question": "20. ---This is really a wonderful party with interesting people and great food.\n---I’m glad you are _____.",
+    "options": [
+      "liking it",
+      "enjoying yourself",
+      "at the party",
+      "are loving"
+    ],
+    "answer": "B",
+    "explanation": "enjoy yourself \"玩得高兴\" 表示感情的love,like 一般不用于进行时。C与题意不符合。答案是B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "question": "21. ---You’ve dropped _____ “s’’ in the word “acros’’\n---Oh, ____ letter “s’’ should be doubled like this “across’’.",
+    "options": [
+      "a, a",
+      "an, a",
+      "a, the",
+      "an, the"
+    ],
+    "answer": "D",
+    "explanation": "本题考查冠词的用法。表示泛指时用不定冠词，a 用在辅音发音字母之前，an用在元音发音字母之前。s的读音为/es/,为元音发音。应用“an”,后面表特指，上面出现的，应用\"the\",答案为D.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 22,
+    "question": "22. ---The pen writes well though it doesn’t cost much.\n--- Let me have a try. So _____.",
+    "options": [
+      "it is",
+      "it does",
+      "does it",
+      "is it"
+    ],
+    "answer": "B",
+    "explanation": "同第7题，根据题意是表示同意对方的看法，而write要用do/does替代，pen为单数，所以答案是B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "question": "23. ---The smell in the room is really terrible.\n---You said it. Let’s keep all the windows _____ .",
+    "options": [
+      "closed",
+      "open",
+      "opening",
+      "to open"
+    ],
+    "answer": "B",
+    "explanation": "keep+宾语+形容词 \"使...保持某状态\"  keep+宾语+动词ing形式，也表示“使...保持某状态”但是宾语是后面动词的发出者，如:keep you waiting  ,根据题意，房间里味道不好，要把窗户打开，而不是关上。答案是B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 24,
+    "question": "24. ---____ the Internet _____ in your school?\n---Yes, but the computer in our office has often broken down.",
+    "options": [
+      "Is, used",
+      "Is, using",
+      "Does, use",
+      "Has, used"
+    ],
+    "answer": "A",
+    "explanation": "根据句意，internet是被使用，应该用被动语态。答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "question": "25. ---Do you often get on-line?\n---Yes. I ______ most of my time on it .It’s a good way to kill time.",
+    "options": [
+      "cost",
+      "spend",
+      "pay",
+      "take"
+    ],
+    "answer": "B",
+    "explanation": "cost 一般物作主语，“花费” spend \"花费时间或金钱\"  pay 支付（钱） take一般指花费时间。答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 26,
+    "question": "26. ---Did Tom’s parents go to the meeting yesterday?\n---Yes, ____ of them did, but ____ spoke.",
+    "options": [
+      "each, none",
+      "both, none",
+      "neither, both",
+      "both, neither"
+    ],
+    "answer": "D",
+    "explanation": "根据题意，父母两个人都去了，且两个人都没说话。both表示两者都，neither表示两者都不。答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 27,
+    "question": "27. ---I eat _____ vegetables and ______ meat than I did last year.\n---That’s why you’re getting fatter.",
+    "options": [
+      "fewer, more",
+      "more, less",
+      "least, more",
+      "many, much"
+    ],
+    "answer": "A",
+    "explanation": "第二句话的意思是：这就是你越来越胖的原因。那么可以判断第一句话是跟去年相比，我吃更少的蔬菜，更多的肉。而蔬菜是复数，只能用fewer来修饰表示比较少。less修饰不可数名词表示比较少。more是many 和much的比较级，可以修饰可数和不可数名词。答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 28,
+    "question": "28. ---_____ is the population of the town?\n---Over 20,000 .And a third of the population ____ workers of the car factory.",
+    "options": [
+      "What, are",
+      "How many, are",
+      "What, is",
+      "How many, is"
+    ],
+    "answer": "A",
+    "explanation": "对人口提问用how large 或what . The population of ....作主语时谓语动词用单数。当主语表示人口的百分之几，几分之几时，谓语动词用复数形式。答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 29,
+    "question": "29. ---I tried to make Kate ______ her mind, but I found it hard.\n---Well, I saw you_______ that when I went past.",
+    "options": [
+      "change, do",
+      "changes, doing",
+      "to change, do",
+      "change , doing"
+    ],
+    "answer": "D",
+    "explanation": "make是使役动词，后面接不带to的不定式作宾补。表示“让某人做某事”。接现在分词作宾补，表示：“让某人一直做某事”。see是感官动词，接现在分词做宾补，强调动作正在进行。接不带to的不定式作宾补，强调动作的整个过程或经常发生，已经发生。类似的词有：feel,listen to ,hear,have,let,make,see,notice,observe,watch,look at. 本题的意思是：我试图让凯特改变她的想法，但是我发现很难。-------是的，我经过时看见你正在劝她。答案是D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 30,
+    "question": "30. ---Sorry. I am late.\n---It doesn’t matter. The meeting ______ for just several minutes",
+    "options": [
+      "has begun",
+      "has started",
+      "has been on",
+      "had been on"
+    ],
+    "answer": "C",
+    "explanation": "begin,start是瞬间动词，不能与表示一段时间的状语一起用在完成时中。而根据题目可看出，是现在时，所以不能用过去完成时。答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 31,
+    "question": "31. ---I feel tired and sleepy.\n---Why not stop _____?",
+    "options": [
+      "to work",
+      "to have a rest",
+      "having a rest",
+      "to go on with your work"
+    ],
+    "answer": "B",
+    "explanation": "stop to do sth.表示 停下了去做另外的事。Stop doing sth. 表示  停止做某事。句子的意思是我感觉很累，很想睡。对方肯定是劝她停下手上的事去休息。答案是B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 32,
+    "question": "32. ---Did you notice the boy come in?\n---No, I didn’t because I _______a film.",
+    "options": [
+      "had watched",
+      "have watched",
+      "was watching",
+      "am watching"
+    ],
+    "answer": "C",
+    "explanation": "句子的意思是：你注意到刚进来的男孩了吗？----不，我没有，我正在看一个电影。整句是过去时，表示正在做的事，应该用过去进行时。答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 33,
+    "question": "33. ---Could you tell me _____? I must find him.\n---Sorry, I have no idea. But he was here just now.",
+    "options": [
+      "where Tom was",
+      "where has Tom gone",
+      "where can I find Tom.",
+      "where Tom is"
+    ],
+    "answer": "D",
+    "explanation": "本题是考查宾语从句的用法。由what,where,who等疑问词引导的宾语从句要用陈述语气，疑问词+陈述句，而不是疑问词+一般疑问句。Could 此时表示委婉的请求语气，而不是过去时。答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "question": "34. ---Shall I tell Mike about it?\n---No, you _____. He’s already been told.",
+    "options": [
+      "mustn’t",
+      "can’t",
+      "don’t",
+      "needn’t"
+    ],
+    "answer": "D",
+    "explanation": "mustn’t 表示“禁止，不许” can’t “不能”  don’t”不...” needn’t  “不必要”根据题目意思，他已经知道了，不存在着禁止，不能的意思。Don’t也不能回答Shall 引导的一般疑问句，答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "question": "35. ---I’m ______ in what _____ you.\n---Well, don’t follow suit. Just do what you like.",
+    "options": [
+      "interesting, interests",
+      "interested, interests",
+      "interest, interests",
+      "interest, interesting"
+    ],
+    "answer": "B",
+    "explanation": "Be interested in 对...感兴趣  人作主语  interesting  令人感兴趣的  物作主语   interest  使人感兴趣  答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 36,
+    "question": "36. ---I’m too busy_______ to my family often.\n---Why not call them instead?",
+    "options": [
+      "writing",
+      "to write",
+      "written",
+      "write"
+    ],
+    "answer": "B",
+    "explanation": "too....to 太....而不能......我太忙而不能经常给我家里人写信。答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 37,
+    "question": "37. ---______ present you’ve bought for me!\n---I’m glad you like it.",
+    "options": [
+      "How a",
+      "What a",
+      "How",
+      "What"
+    ],
+    "answer": "B",
+    "explanation": "感叹句how修饰形容词或副词，what修饰名词。present是可数名词，答案为B.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 38,
+    "question": "38. ---This is no-smoking zone. Can’t you see the sign?\n---Oh, sorry. I ______ it.",
+    "options": [
+      "haven’t seen",
+      "won’t see",
+      "don’t see",
+      "didn’t see"
+    ],
+    "answer": "D",
+    "explanation": "这是不吸烟区，难道你不能看见这个标示吗？   在这个人的提示下，答话人现在肯定看见这个标示了。那么是以前没看见，答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 39,
+    "question": "39. ---Will you please let me have a look at the photos taken in the States?\n---Sure .I’ll _____ them here to school tomorrow.",
+    "options": [
+      "take",
+      "carry",
+      "get",
+      "bring"
+    ],
+    "answer": "D",
+    "explanation": "本题主要对比take 和bring。take是拿走，bring是拿来。carry是携带，get是得到，答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 40,
+    "question": "40. ---Look at ____ animal. It’s interesting.\n---Which one do you mean? ____ black one with a long tail?",
+    "options": [
+      "an, The",
+      "an, An",
+      "the, The",
+      "the, An"
+    ],
+    "answer": "C",
+    "explanation": "考查冠词的用法。而根据题意我们可以看出，这是动物是表示特指，答案是C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 41,
+    "question": "41. ---What happened to Tom?\n---He was crossing the street ____ a motorbike hit him from behind.",
+    "options": [
+      "while",
+      "when",
+      "until",
+      "because"
+    ],
+    "answer": "B",
+    "explanation": "While表示“在..时候”时不能与瞬间动词连用。hit是撞，瞬间的动作。when “当....时候”可以与瞬间动词连用。until 直到....because 因为 后面两个与题目意思不符合，答案为B.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 42,
+    "question": "42. ---Dad, what’s the sea like?\n---Well, it’s large and full of water. It covers about _____ of the earth.",
+    "options": [
+      "one third",
+      "three quarter",
+      "three-fourth",
+      "three quarters"
+    ],
+    "answer": "D",
+    "explanation": "我们知道海占了地球的大部分。A 是三分之一，与题目不符合。Quarter是四分之一，在分子大于一时，分母序数词要用复数，答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 43,
+    "question": "43. ---Go and ask the waiter how much_____.\n---Don’t worry. It has been _____.",
+    "options": [
+      "does the meal cost, paid for",
+      "the meal costs, paid",
+      "the meal spends, paid",
+      "the meal costs, paid for"
+    ],
+    "answer": "B",
+    "explanation": "首先宾语从句用陈述句语序，A可以排除。cost表示某物花多少钱，spend 花费时间或金钱，一般人做主语。pay 付多少钱，pay for 为....支付了多少钱。答案是B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 44,
+    "question": "44. ---Does the child need any help?\n---No. He is old enough to _____ himself.",
+    "options": [
+      "put on",
+      "wear",
+      "dress",
+      "take care"
+    ],
+    "answer": "C",
+    "explanation": "put on 强调穿的动作，wear 强调穿着的状态，dress后面接人做主语，dress sb.给某人穿衣，dress oneself给自己穿衣，take care of 照顾。答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 45,
+    "question": "45. ---There can be no life on the earth without water.\n---That’s right. Water _____ everywhere.",
+    "options": [
+      "needs",
+      "is needing",
+      "is needed",
+      "needed"
+    ],
+    "answer": "C",
+    "explanation": "本题是没水就没有生命，水在任何地方都被需要，被动语态，答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 46,
+    "question": "46. ---Were you late ____the meeting?\n---No, I arrived there ten minutes______ the meeting started.",
+    "options": [
+      "for, before",
+      "at, before",
+      "for, till",
+      "at, after"
+    ],
+    "answer": "A",
+    "explanation": "Be late for 固定用法 “迟到” 为什么你开会迟到？ ---不，我在开会前十分钟到的。答案为A。Till 直到  after ...之后   before  ...之前。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "question": "47. ---Excuse me, but I don’t think you can take photos here.\n---Sorry I ____ this is no-photo zone.",
+    "options": [
+      "don’t know",
+      "didn’t know",
+      "have no idea",
+      "haven’t known"
+    ],
+    "answer": "B",
+    "explanation": "根据题目意思可看出对方是以前不知道这里是不允许照相的区域，用过去时，答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 48,
+    "question": "48. ---How many English words had you learned _____ the end of last term?\n---Around 2000, but I’ve forgotten most of them.",
+    "options": [
+      "by",
+      "at",
+      "to",
+      "on"
+    ],
+    "answer": "A",
+    "explanation": "By the end of 到....为止   如果后面接将来时间，主句用将来时，如果后面是现在时间，主句用现在完成时，如果是过去时间，主句用过去完成时。At the end of “在...尽头”后面接时间时，一般用过去时或将来时。答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 49,
+    "question": "49. ---Are you learning art now during your spare time?\n---No. I’ve stopped _____ Chinese medicine instead.",
+    "options": [
+      "to learn",
+      "learning",
+      "learn",
+      "studying"
+    ],
+    "answer": "A",
+    "explanation": "你现在在空闲时间学习艺术吗？---不，我已经停止了，在学中医。stop to do 和stop doing分别表示“停下来去做某事”和“停止做某事”答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 50,
+    "question": "50. ---What did you ____ just now?\n---I _____ you if you could follow me.",
+    "options": [
+      "say, said",
+      "speak, asked",
+      "speak, said",
+      "say, asked"
+    ],
+    "answer": "D",
+    "explanation": "你刚在说什么？我问你你是否能跟我来。Say 及物动词，强调说话的内容。speak一般表示说某种语言。强调说的动作。ask询问，打听，请求。答案是D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 51,
+    "question": "51. ---Do you like ____ a teacher?\n--- Sure. But my parents ____ me to be a doctor when I was a young girl.",
+    "options": [
+      "to be, hoped",
+      "being, hoped",
+      "being, wished",
+      "to be, wish"
+    ],
+    "answer": "D",
+    "explanation": "like后面可以接doing或to do，hope不能直接接名词/代词作宾语，wish sb to do sth希望某人做某事。答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 52,
+    "question": "52. ---Mom, I’ve got a fever.\n---So_____. How did you catch it?",
+    "options": [
+      "have you",
+      "you have",
+      "have I",
+      "did I"
+    ],
+    "answer": "C",
+    "explanation": "like后面可以接doing 或to do，但是hope不能直接接名词/代词作宾语，所以排除AB。\n题目的意思是你喜欢做老师吗？---是的，但是在我小时候我父母希望我成为医生。主谓一致，应该用过去时。答案为C。\nhope/wish to do sth.  想，希望做什么事\nhope/wish +that从句   wish 表示不太可能实现的事，从句用虚拟语气。\nwish sb to do sth  希望某人去做某事",
+    "difficulty": "easy"
+  },
+  {
+    "id": 53,
+    "question": "53. ---Something must be done to stop the farmers cutting down the forests.\n---I agree with you .If we ____, a lot more good land will be gone with them.",
+    "options": [
+      "won’t",
+      "aren’t",
+      "don’t",
+      "mustn’t"
+    ],
+    "answer": "B",
+    "explanation": "前面的助动词是have，后面回答也用have。So have you 表示你也是这样，与题意不符合，so you have 的确如此。答案是B。 So have I 我也是这样-也与题意不符合。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 54,
+    "question": "54. ---Did you _____ the first place of the league match?\n---Of course we did. We _____ all the other teams.",
+    "options": [
+      "beat, beat",
+      "beat, won",
+      "win, won",
+      "win, beat."
+    ],
+    "answer": "C",
+    "explanation": "条件从句中，要用现在时代替将来时。A可以排除。B 表示状态，D 表示禁止，与题意不符合，答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 55,
+    "question": "55. ---Why not borrow some money from your friends?\n---But I know _____ of the people here except you.",
+    "options": [
+      "either",
+      "none",
+      "all",
+      "no one"
+    ],
+    "answer": "D",
+    "explanation": "win“获胜”、“得到成功”，在作为及物动词时，它的宾语往往是奖品、地位、奖学金、名誉、财产、战争或运动等等\nbeat也有“赢”、“取胜”、“战胜”之意。但跟win的用法不同，这个动词后面跟的是比赛、竞争中的对手或战争中的敌人。 答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 56,
+    "question": "56. ---What he enjoys _____ great and interesting.\n---Yes,____ it’s dangerous.",
+    "options": [
+      "sounds,but",
+      "to sound,but",
+      "sounds,so",
+      "to sound,so"
+    ],
+    "answer": "B",
+    "explanation": "either  两者中任何一个   all 全部，所有  与题意不符合。no one后面不能接of结构，答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 57,
+    "question": "57. ---What are you going to do tomorrow?\n---I’m not sure. I____ make a trip to Hangzhou with my girl friend.",
+    "options": [
+      "may",
+      "maybe",
+      "will",
+      "must"
+    ],
+    "answer": "A",
+    "explanation": "从句作主语时谓语动词用单数。great and interesting到dangerous有变化，转折用but,答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 58,
+    "question": "58. --- Did you finish _____ the book?\n---Yes, I did. Thanks ____ your dictionary, I had a better understanding of it.",
+    "options": [
+      "reading, for",
+      "reading, to",
+      "to read, for",
+      "to read, to"
+    ],
+    "answer": "B",
+    "explanation": "Finish doing sth.完成做什么事 finish 不能接动词不定式 thanks to 幸亏 答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 59,
+    "question": "59. ---How ____ is it from here Ningbo to Xi’an?\n---It’s about two ____ flight.",
+    "options": [
+      "long, hour’s",
+      "far, hour’s",
+      "long, hours’",
+      "far, hours’"
+    ],
+    "answer": "D",
+    "explanation": "from Ningbo to xi'an 从宁波到西安指距离，对距离提问用how far 两个小时的航程 two hours' 答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 60,
+    "question": "60. ---Why did you come back so late today?\n---Because it   heavily when the meeting was over. We had to wait until it came to a stop.",
+    "options": [
+      "was raining",
+      "is raining",
+      "rained",
+      "rains"
+    ],
+    "answer": "A",
+    "explanation": "整个时态为过去时，当会议结束时正在下雨，用过去进行时，答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 61,
+    "question": "61. ---Would you like to give us a talk sometime next week?\n---Sure. But what subject should I _____?",
+    "options": [
+      "talk",
+      "talk about",
+      "talk with",
+      "talk to"
+    ],
+    "answer": "B",
+    "explanation": "谈论什么主题用talk about 答案为B。talk with 和谁交谈 两方都有说 talk to 对谁说话 侧重于一方讲，一方听 答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 62,
+    "question": "62. ---People never use Mr, Mrs or Miss before their first names, do they?\n---   , they only use them before their family names.",
+    "options": [
+      "Yes, they don’t",
+      "Yes, they do",
+      "No, they don’t",
+      "No, they do"
+    ],
+    "answer": "B",
+    "explanation": "谈论什么主题用talk about 答案为B。talk with 和谁交谈 两方都有说    talk to 对谁说话 侧重于一方讲，一方听  答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 63,
+    "question": "63. ---Are your parents living with you in China?\n---Yes. They    here with my family.",
+    "options": [
+      "are all",
+      "are both",
+      "all are",
+      "both are"
+    ],
+    "answer": "B",
+    "explanation": "父母是两个人，用both both/all 放在行为动词前，be 动词后面 答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 64,
+    "question": "64. ---May I go out and play this afternoon?\n---No, you _____. Work comes first",
+    "options": [
+      "needn’t",
+      "mustn’t",
+      "won’t",
+      "don’t"
+    ],
+    "answer": "B",
+    "explanation": "父母是两个人，用both  both/all 放在行为动词前，be 动词后面 答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 65,
+    "question": "65. ---What happened to him?\n---Oh, he    off his bike and    his legs.",
+    "options": [
+      "falls, hurts",
+      "fell, hurt",
+      "felt, hurt",
+      "fell, breaks"
+    ],
+    "answer": "B",
+    "explanation": "第一句话是表示请求，其否定回答，用mustn’t 答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 66,
+    "question": "66. ---Would you like some tea, please?\n---Yes, I prefer tea    sugar.",
+    "options": [
+      "to",
+      "for",
+      "with",
+      "than"
+    ],
+    "answer": "B",
+    "explanation": "发生的事情已经过去，用过去时。hurt指精神上或肉体上伤害  break强调打碎  答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 67,
+    "question": "67. ---Would you please    make the child   any more?\n---Well, I just wanted him not to play with the chalk.",
+    "options": [
+      "don’t, cry",
+      "not, to cry",
+      "don’t, to cry",
+      "not, cry"
+    ],
+    "answer": "C",
+    "explanation": "带糖的茶   tea with sugar  答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 68,
+    "question": "68. ---What    useful book !\n---Yes, it is. But I find it    difficult for me to read.",
+    "options": [
+      "an, very",
+      "a, too",
+      "an, too",
+      "a, quite"
+    ],
+    "answer": "D",
+    "explanation": "Would you please+动词原形  否定形式为 would you please not +动词原形\nmake sb.do sth  让某人做某事   不能加to。答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 69,
+    "question": "69. ---Maths isn’t as    as Chinese.\n---I agree with you. I think Chinese is    than any other subject.",
+    "options": [
+      "easy, easier",
+      "easier, easier",
+      "easy, easiest",
+      "hard, the most difficult"
+    ],
+    "answer": "B",
+    "explanation": "感叹句  what+a/an+形容词+名词单数 useful 是辅音音素开头的，用a修饰\ntoo...to 太....而不能  固定用法  答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 70,
+    "question": "70. ---Mum, will you take me to the park tomorrow?\n---If it    rainy.",
+    "options": [
+      "won’t",
+      "doesn’t",
+      "isn’t",
+      "won’t be"
+    ],
+    "answer": "A",
+    "explanation": "as...as   同级比较，中间用原形   后面的是两类（中文和其他科目）作比较，用比较级\n根据句意，数学没有中文容易。我同意你的看法，我认为中文比其他科目都简单。\n答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 71,
+    "question": "71. ---Did you stop    hello to Mrs Smith ?\n---No, I didn’t see her when she went past.",
+    "options": [
+      "saying",
+      "said",
+      "say",
+      "to say"
+    ],
+    "answer": "C",
+    "explanation": "条件从句中用一般现在时代替将来时，排除A.D。rainy是形容词  答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 72,
+    "question": "72. ---Why don’t you go to the lecture-room and listen to the talk?\n---I hear there isn’t    in it.",
+    "options": [
+      "something new",
+      "new anything",
+      "anything new",
+      "nothing new"
+    ],
+    "answer": "D",
+    "explanation": "stop to do sth  停下来去做某事  stop doing sth.停止做某事 根据题目意思答案为D。\n她经过时我没看见，所以我没有停下来去向史密斯夫人问好。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 73,
+    "question": "73. ---I did badly in the long jump.\n---   .",
+    "options": [
+      "Congratulations",
+      "That’s great",
+      "Well done",
+      "Bad Luck"
+    ],
+    "answer": "C",
+    "explanation": "形容词修饰复合不定代词时放在不定代词后面  否定句用anything代替something 答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 74,
+    "question": "74. Miss Liu asked Tom to read the new words and    students to listen to him.",
+    "options": [
+      "other",
+      "the others",
+      "others",
+      "the other"
+    ],
+    "answer": "D",
+    "explanation": "badly说明不好，很差  ABC都有好的意思  答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 75,
+    "question": "75. ---Do you know the result of the_____race?\n---Yes. The winner is a boy    Lin Feng from Class 4.",
+    "options": [
+      "100-metres, called",
+      "100-metre, calling",
+      "100-metre, called",
+      "100-metres, named"
+    ],
+    "answer": "D",
+    "explanation": "Tom 和班上其他同学 强调了范围，  答案为D。\nOther泛指  其他的   the others 其他的人或物 不能接名词  others 是other的复数",
+    "difficulty": "easy"
+  },
+  {
+    "id": 76,
+    "question": "76. The weather here is quite different_____that of my hometown.",
+    "options": [
+      "from",
+      "with",
+      "than",
+      "as"
+    ],
+    "answer": "C",
+    "explanation": "数词+名词+形容词  作定语，中间用连词符号，且中间的名词用单数。这里我们可以看作100-metre-long 省略了long。小孩被叫Lin Feng用被动的形式。答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 77,
+    "question": "77. My father_____me to be a doctor, but my mother doesn’t agree_____him.",
+    "options": [
+      "wishes, to",
+      "wishes, with",
+      "hopes, with",
+      "wants, to"
+    ],
+    "answer": "A",
+    "explanation": "be different from  与....不同 答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 78,
+    "question": "78. ---Don’t play the dangerous game any more.\n---Sorry! I_____do it again.",
+    "options": [
+      "can’t",
+      "don’t",
+      "won’t",
+      "mustn’t"
+    ],
+    "answer": "B",
+    "explanation": "wish sb.to do sth.希望某人做某事  而hope不能构成不定式的复合宾语。agree with sb.同意某人的意见  agree to do st.同意做某事  答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 79,
+    "question": "79. ---English is _____difficult subject. I even want to drop it.\n---You’d better not. I’ll help you    it.",
+    "options": [
+      "quite a, with",
+      "a quite, with",
+      "a very, for",
+      "very a, with"
+    ],
+    "answer": "C",
+    "explanation": "表示将来用will,否定形式为C，答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 80,
+    "question": "80. ---English is _____difficult subject. I even want to drop it.\n---You'd better not. I'll help you _____it.",
+    "options": [
+      "quite a, with",
+      "a quite, with",
+      "a very, for",
+      "very a, with"
+    ],
+    "answer": "A",
+    "explanation": "quite 一般放在冠词前面  help sb.with sth.在某事上帮助某人   help sb.to do sth.帮助某人做某事  答案为A",
+    "difficulty": "easy"
+  },
+  {
+    "id": 81,
+    "question": "81. ---I hear a traffic accident happened yesterday. Was it terrible?\n---Yes. A car fell over and all the people in it were badly hurt. But luckily,   of them               were killed.",
+    "options": [
+      "neither",
+      "none",
+      "every",
+      "both"
+    ],
+    "answer": "B",
+    "explanation": "neither两者都不,句中有all the people说明不止2人，且luckily，说明没有人were killed。答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 82,
+    "question": "82. ---You can hardly swim, can you?\n---_____. But my mother says she’ll teach me during my summer holiday.",
+    "options": [
+      "Yes, I can’t",
+      "No, I can",
+      "No, I can’t",
+      "Yes, I can"
+    ],
+    "answer": "C",
+    "explanation": "A,B结构不对。第一句中有否定词hardly.第二句补充了：我妈妈会教我。说明搭话人的确不会游泳  。C 的意思是：是的，我不会。D的意思是：不，我会。答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 83,
+    "question": "83. ---Do you think there are _____new words in this unit ?\n---Yes, that’s right. I’ll _____first.",
+    "options": [
+      "too much, look them up",
+      "too many, look up them",
+      "much too, look them up",
+      "too many, look them up"
+    ],
+    "answer": "D",
+    "explanation": "new words是可数名词复数，用too many修饰。look up是动副结构，代词作宾语要放在中间。答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 84,
+    "question": "84. ---You must _____ what I have done for you before you leave.\n---Well, how much does it _____? Is 100 dollars enough?",
+    "options": [
+      "pay for, cost",
+      "pay, spend",
+      "spend, pay for",
+      "pay, cost"
+    ],
+    "answer": "A",
+    "explanation": "为某事支付用pay for.  某事花费多少钱，用cost。spend 一般由人作主语。答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 85,
+    "question": "85. ---Go _____ the forest and _____ the foot of the mountain you will find it.",
+    "options": [
+      "through, at",
+      "across, at",
+      "through, under",
+      "past, under"
+    ],
+    "answer": "A",
+    "explanation": "穿过深林，用through，如果是从物体表面通过，用across.山脚下用at the foot of the mountain 答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 87,
+    "question": "87.The policeman asked him _____when the accident happened.",
+    "options": [
+      "what was he doing",
+      "what did he do",
+      "what he was doing",
+      "what he did"
+    ],
+    "answer": "A",
+    "explanation": "穿过深林，用through，如果是从物体表面通过，用across.山脚下用at the foot of the mountain 答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 88,
+    "question": "88.Mr Green_____living in China though he was born in London.",
+    "options": [
+      "would like",
+      "wants",
+      "hates",
+      "enjoys"
+    ],
+    "answer": "B",
+    "explanation": "children 是复数形式，C.D可排除，此句的中心词是名词，用what修饰，答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 89,
+    "question": "89. ---Here is a piece of paper for you!\n---Oh, thanks. It’s _____for me to write a long letter on.",
+    "options": [
+      "big enough",
+      "enough large",
+      "small enough",
+      "enough small"
+    ],
+    "answer": "C",
+    "explanation": "警察询问他在事故发生时他在做什么。后面是宾语从句，用陈述句语序且为过去进行时，答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 90,
+    "question": "90.The United States _____up its satellite until January 31,1958.",
+    "options": [
+      "sent",
+      "didn’t send",
+      "hasn’t sent",
+      "wasn’t sent"
+    ],
+    "answer": "D",
+    "explanation": "尽管Mr Green出生在伦敦，但是他喜欢居住在中国。答案为D。\nwould like sth. 想要什么        would like to do sth.喜欢做某事\nwant to do sth.  想做某事",
+    "difficulty": "easy"
+  },
+  {
+    "id": 91,
+    "question": "91. ---When shall we go to see him in the hospital?\n---Oh, I nearly forget. What about this afternoon as soon as we _____our work?",
+    "options": [
+      "will finish",
+      "are finished",
+      "finish",
+      "are going to"
+    ],
+    "answer": "A",
+    "explanation": "enough 足够的,修饰形容词时放在形容词后面。根据题意，答案为A。足够大才能写。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 92,
+    "question": "92. ---You’d better_____work too hard like this.\n---I see. You mean_____too hard makes one tired and ill.",
+    "options": [
+      "not, work",
+      "don‘t, working",
+      "don’t, to work",
+      "not, working"
+    ],
+    "answer": "B",
+    "explanation": "Not....until 直到....才  过去发生的事，用过去时。答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 93,
+    "question": "93. ---Football _____by the British at the beginning of last century.\n---That’s probably why football is one of_____popular games in England.",
+    "options": [
+      "was invented, the most",
+      "invented, more",
+      "was invented, more",
+      "invented, the most"
+    ],
+    "answer": "C",
+    "explanation": "as soon as引导的条件状语从句，用一般现在时代替将来时，答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 94,
+    "question": "94. ---Do you know the city of Ningbo well?\n---Of course I do. I’ve_____here for nearly 3 years.",
+    "options": [
+      "come",
+      "been",
+      "arrived",
+      "got"
+    ],
+    "answer": "D",
+    "explanation": "You’d better do sth.的否定形式：you’d better not do sth.\n第2句mean后面的是宾语从句，且由动名词做主语。不能直接用动词原形作主语。答案为D。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 95,
+    "question": "95. ---Must we move to the next room?\n---No, you_____. You may still live here if you like.",
+    "options": [
+      "mustn’t",
+      "don’t",
+      "don’t have to",
+      "won’t"
+    ],
+    "answer": "A",
+    "explanation": "上个世纪初为过去的时间，且足球是被发明，用过去被动时。在英国足球是最受欢迎的运动之一，答案为A。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 96,
+    "question": "96.I find_____interesting to play games with children.",
+    "options": [
+      "that",
+      "how",
+      "what",
+      "it"
+    ],
+    "answer": "B",
+    "explanation": "A.C为瞬间动词，不与for+时间段用于完成时中。got与题意不符合，答案为B。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 97,
+    "question": "97._____are useful animals.",
+    "options": [
+      "Cow",
+      "Pig",
+      "Panda",
+      "Sheep"
+    ],
+    "answer": "C",
+    "explanation": "对于must引导的一般疑问句的否定回答用don’t have to 或needn’t.答案为C。",
+    "difficulty": "easy"
+  },
+  {
+    "id": 98,
+    "question": "98.Be careful when_____the street.",
+    "options": [
+      "to cross",
+      "cross",
+      "you cross",
+      "you’ll cross"
+    ],
+    "answer": "D",
+    "explanation": "It 作形式宾语。答案为D。find it +形容词+to do sth.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 99,
+    "question": "99.Take your time,_____you’ll make another mistake.",
+    "options": [
+      "then",
+      "and",
+      "if",
+      "or"
+    ],
+    "answer": "D",
+    "explanation": "are 说明主语用复数，里面只有sheep单复数同形。其他都是单数形式。答案为D。",
+    "difficulty": "easy"
+  }
+]
